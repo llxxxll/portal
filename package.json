@@ -1,0 +1,49 @@
+{
+  "name": "paddle_portal",
+  "version": "2.0.0",
+  "description": "paddle_portal codes",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --inline",
+    "watch": "node ./node_modules/webpack/bin/webpack --watch",
+    "build": "node ./node_modules/webpack/bin/webpack --config webpack.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaddlePaddle/portal.git"
+  },
+  "keywords": [
+    "paddle",
+    "portal",
+    "front-end"
+  ],
+
+  "author": "Shi-Liang <385936547@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaddlePaddle/portal/issues"
+  },
+  "homepage": "https://github.com/PaddlePaddle/portal#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.7.0",
+    "glob": "^7.1.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.26.0",
+    "jquery": "^3.1.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "engines": {
+    "node" : "7.4.0"
+  },
+  "private": true
+}
