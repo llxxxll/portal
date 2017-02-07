@@ -2429,7 +2429,7 @@ header.site-header .top-nav .language-switcher::before {
   height: 16px;
   top: 27px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #64697b;
   left: 0;
 }
 header.site-header .top-nav .language-switcher::after {
@@ -2439,7 +2439,7 @@ header.site-header .top-nav .language-switcher::after {
   height: 16px;
   top: 27px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #64697b;
   right: 0;
 }
 header.site-header .top-nav .language-switcher > a {
@@ -2482,11 +2482,12 @@ header.site-header .github-fork {
 header.site-header .github-fork > a {
   display: inline-block;
   line-height: 30px;
-  color: #597cf1;
+  color: #3c4f85 ;
   padding: 0 15px;
-  border: 1px solid #597cf1;
+  border: 1px solid #3c4f85;
   margin: 20px 0;
   border-radius: 15px;
+  font-size: 14px;
 }
 header.site-header .github-fork > a .fa {
   font-size: 22px;
@@ -2506,6 +2507,7 @@ header.site-header .banner h1 {
   font-size: 50px;
   line-height: 50px;
   font-weight: normal;
+  letter-spacing: 5px;
 }
 header.site-header .banner p {
   color: #b9bcc4;
@@ -2603,8 +2605,8 @@ header.site-header .banner .github-counter > span:nth-child(1) .fa {
 }
 .services .service-icon {
   text-align: center;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .services .service-desc h3 {
   color: #2f3443;
@@ -2665,6 +2667,7 @@ header.site-header .banner .github-counter > span:nth-child(1) .fa {
   margin: 30px 0 20px;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 300;
 }
 .features .feature-desc p {
   font-size: 14px;
