@@ -2407,6 +2407,7 @@ header.site-header .top-nav .site-links > li > a {
   padding: 0 20px;
   color: rgba(255, 255, 255, 0.7);
 }
+header.site-header .top-nav .site-links > li > a.active,
 header.site-header .top-nav .site-links > li > a:hover {
   color: #fff;
 }
@@ -2482,7 +2483,7 @@ header.site-header .github-fork {
 header.site-header .github-fork > a {
   display: inline-block;
   line-height: 30px;
-  color: #3c4f85 ;
+  color: #597cf1 ;
   padding: 0 15px;
   border: 1px solid #3c4f85;
   margin: 20px 0;
