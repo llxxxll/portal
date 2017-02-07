@@ -2338,7 +2338,7 @@
 body,
 html {
   min-width: 1180px;
-  font-family: 'Microsoft Yahei', Arial, serif;
+  font-family: 'NotoSansHans', 'Microsoft Yahei', Arial, serif;
   margin: 0;
 }
 ul {
@@ -2363,25 +2363,28 @@ h2 {
   font-size: 20px;
   color: #2f323a;
   text-align: center;
-  line-height: 40px;
-  padding: 40px 0;
+  line-height: 20px;
+  padding: 50px 0;
   margin: 0;
+  font-weight: 300;
+  position: relative;
 }
 header.site-header {
-  height: 60px;
-  background-color: #303b56;
+  height: 760px;
   margin: 0;
-  padding-bottom: 10px;
+  background: url('/src/images/banner.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
 }
-header.site-header > .row > * {
+header.site-header > nav.row > * {
   display: inline-block;
 }
 header.site-header .logo {
-  height: 60px;
+  height: 70px;
   float: left;
 }
 header.site-header .logo > img {
-  height: 40px;
+  height: 50px;
   margin-top: 10px;
 }
 header.site-header .top-nav {
@@ -2395,12 +2398,12 @@ header.site-header .top-nav .site-links {
 header.site-header .top-nav .site-links > li {
   display: inline-block;
   float: left;
-  height: 60px;
+  height: 70px;
 }
 header.site-header .top-nav .site-links > li > a {
   display: inline-block;
   height: 100%;
-  line-height: 60px;
+  line-height: 70px;
   padding: 0 20px;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2410,7 +2413,7 @@ header.site-header .top-nav .site-links > li > a:hover {
 header.site-header .top-nav .language-switcher {
   position: relative;
   display: inline-block;
-  height: 60px;
+  height: 70px;
   float: left;
 }
 header.site-header .top-nav .language-switcher:hover > a {
@@ -2424,7 +2427,7 @@ header.site-header .top-nav .language-switcher::before {
   display: inline-block;
   width: 1px;
   height: 16px;
-  top: 22px;
+  top: 27px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
   left: 0;
@@ -2434,14 +2437,14 @@ header.site-header .top-nav .language-switcher::after {
   display: inline-block;
   width: 1px;
   height: 16px;
-  top: 22px;
+  top: 27px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
   right: 0;
 }
 header.site-header .top-nav .language-switcher > a {
   color: rgba(255, 255, 255, 0.7);
-  line-height: 60px;
+  line-height: 70px;
   display: inline-block;
   padding: 0 20px;
 }
@@ -2482,7 +2485,7 @@ header.site-header .github-fork > a {
   color: #597cf1;
   padding: 0 15px;
   border: 1px solid #597cf1;
-  margin: 15px 0;
+  margin: 20px 0;
   border-radius: 15px;
 }
 header.site-header .github-fork > a .fa {
@@ -2495,25 +2498,22 @@ header.site-header .github-fork > a:hover {
   color: #fff;
   background-color: #597cf1;
 }
-.banner {
-  height: 670px;
-  background: url('/src/images/banner.jpg') no-repeat center;
-  background-size: cover;
-  padding: 10px 0;
+header.site-header .banner {
   color: #fff;
-  text-align: center;
 }
-.banner h1 {
-  margin: 100px 0 50px 0;
+header.site-header .banner h1 {
+  margin: 168px 0 46px 0;
   font-size: 50px;
+  line-height: 50px;
   font-weight: normal;
 }
-.banner p {
-  color: #e4e6eb;
+header.site-header .banner p {
+  color: #b9bcc4;
   font-size: 18px;
-  margin: 0 0 50px 0;
+  line-height: 18px;
+  margin: 0 0 46px 0;
 }
-.banner .quick-start {
+header.site-header .banner .quick-start {
   display: inline-block;
   line-height: 50px;
   padding: 0 30px;
@@ -2521,57 +2521,85 @@ header.site-header .github-fork > a:hover {
   background-color: #ff9711;
   border-radius: 25px;
 }
-.banner .quick-start:hover {
+header.site-header .banner .quick-start:hover {
   background-color: #cc7504;
 }
-.banner .github-counter {
+header.site-header .banner .github-counter {
   border-radius: 3px;
   border: 1px solid #d5d5d5;
   display: inline-block;
-  margin: 50px 20px 0;
-  height: 30px;
-  line-height: 30px;
+  margin: 40px 20px 0;
+  height: 26px;
+  line-height: 28px;
   color: #333;
   background-color: #fff;
 }
-.banner .github-counter > span {
+header.site-header .banner .github-counter > span {
   display: inline-block;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 26px;
   float: left;
-  padding: 0 15px;
+  padding: 0 12px;
 }
-.banner .github-counter > span:nth-child(1) {
+header.site-header .banner .github-counter > span:nth-child(1) {
   font-weight: 700;
   border-right: 1px solid #d5d5d5;
   background-color: #ddd;
-  background-image: -webkit-linear-gradient(#eee, #ddd);
   background-image: linear-gradient(#eee, #ddd);
 }
-.banner .github-counter > span:nth-child(1) .fa {
+header.site-header .banner .github-counter > span:nth-child(1) .fa {
   margin-right: 5px;
-  font-size: 18px;
+  font-size: 16px;
+}
+.services h2 {
+  text-align: center;
+}
+.services h2 span {
+  padding: 0 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.services h2::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f3f4f5;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.services > .row:nth-child(3) {
+  background-color: #fcfdff;
+}
+.services > .row:nth-child(n+2) {
+  border-bottom: 1px solid #f3f4f5;
 }
 .services > .row > div {
-  width: 44%;
+  width: 50%;
   float: left;
   display: inline-block;
   height: 400px;
-  padding: 0 3%;
   text-align: left;
   position: relative;
-}
-.services > .row > div:nth-child(2n+1) {
-  text-align: right;
 }
 .services > .row > div > * {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.services > .row > div .service-desc {
+  left: 50px;
+  right: 0;
+}
+.services > .row > div:nth-child(2n+1) {
+  text-align: right;
+}
+.services > .row > div:nth-child(2n+1) .service-desc {
+  right: 50px;
+  left: 0;
 }
 .services .service-icon {
   text-align: center;
@@ -2594,10 +2622,10 @@ header.site-header .github-fork > a:hover {
 .services .service-desc a.view-more {
   color: #597cf1;
   border: 1px solid #597cf1;
-  font-size: 14px;
-  line-height: 14px;
-  padding: 8px 15px;
-  border-radius: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
   display: inline-block;
 }
 .services .service-desc a.view-more:hover {
@@ -2606,7 +2634,26 @@ header.site-header .github-fork > a:hover {
 }
 .features {
   background-color: #f1f2f4;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
+}
+.features h2 {
+  text-align: center;
+}
+.features h2 span {
+  padding: 0 20px;
+  background-color: #f1f2f4;
+  position: relative;
+  z-index: 1;
+}
+.features h2::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e8eb;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 .features .feature-desc {
   width: 25%;
@@ -2615,7 +2662,7 @@ header.site-header .github-fork > a:hover {
 }
 .features .feature-desc h3 {
   color: #2f3443;
-  margin: 20px 0 15px;
+  margin: 30px 0 20px;
   font-size: 20px;
   line-height: 20px;
 }
@@ -2628,10 +2675,10 @@ header.site-header .github-fork > a:hover {
   display: inline-block;
 }
 .get-started {
-  background: url('/src/images/banner.jpg') no-repeat center bottom;
+  background: url('/src/images/get-started-bg.png') no-repeat center bottom;
   color: #fff;
   text-align: center;
-  padding: 60px;
+  padding: 60px 0;
 }
 .get-started h2 {
   font-size: 24px;
@@ -2662,7 +2709,7 @@ header.site-header .github-fork > a:hover {
   text-align: center;
   line-height: 80px;
   font-size: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #484e5e;
   margin-bottom: 30px;
 }
 .footer-nav .contact-us > * {
@@ -2695,7 +2742,7 @@ header.site-header .github-fork > a:hover {
   font-size: 12px;
   text-align: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 0 30px;
 }
 
 /*# sourceMappingURL=home.css.map*/
