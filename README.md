@@ -6,7 +6,7 @@ This repository is mainly used to store the homepage files include css, javascri
 
    Here is the download link: https://nodejs.org/en/download/
 
-2. Git clone this reposition or download the portal codes
+2. Git clone this repository or download the portal codes
 
 3. Use npm to install tools and plugins for development.
 
