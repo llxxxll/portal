@@ -2372,7 +2372,7 @@ h2 {
 header.site-header {
   height: 760px;
   margin: 0;
-  background: url('/src/images/banner.jpg') no-repeat center;
+  background: url(/dist/images/../images/banner.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
 }
@@ -2679,7 +2679,7 @@ header.site-header .banner .github-counter > span:nth-child(1) .fa {
   display: inline-block;
 }
 .get-started {
-  background: url('/src/images/get-started-bg.png') no-repeat center bottom;
+  background: url(/dist/images/../images/get-started-bg.png) no-repeat center bottom;
   color: #fff;
   text-align: center;
   padding: 60px 0;
