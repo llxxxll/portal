@@ -25,15 +25,15 @@ const htmlPlugins = [];
 const htmlEntries = glob.sync(
     '**/*.html',
     {
-        cwd: path.join(__dirname, 'src', 'view')
+        cwd: path.join(__dirname, 'src')
     }
 );
 htmlEntries.forEach(entry => {
     let {base, dir} = path.parse(entry);
     htmlPlugins.push(
         new HtmlWebpackPlugin({
-            filename: path.join(__dirname, 'dist', 'view', dir, base),
-            template: path.join(__dirname, 'src', 'view', dir, base),
+            filename: path.join(__dirname, 'dist', dir, base),
+            template: path.join(__dirname, 'src', dir, base),
             inject: false,
             chunks: [
                 'common'
@@ -67,8 +67,11 @@ const config = {
             test: /\.(svg|eot|woff2|woff|ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: 'url-loader'
         }, {
-            test: /\.(png|jpg)$/,
-            loader: 'url-loader?limit=8192&name=../images/[name].[ext]&publicPath=/dist/images/',
+            test: /\.(png)$/,
+            loader: 'url-loader?limit=8192&name=images/[name].[ext]&publicPath=./',
+        }, {
+            test: /\.(jpg)$/,
+            loader: 'url-loader?limit=8192&name=/images/[name].[ext]&publicPath=./..',
         }, {
             test: /\.html$/,
             loader: 'html-loader',
