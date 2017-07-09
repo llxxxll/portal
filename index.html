@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>PaddlePaddle</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- Baidu Analystics -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?b9a314ab40d04d805655aab1deee08ba";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body> 
+<script type="text/javascript">
+    function browserRedirect() {
+        var sUserAgent= navigator.userAgent.toLowerCase();
+        var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid= sUserAgent.match(/android/i) == "android";
+        var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location.href = 'http://www.paddlepaddle.org/mobile/index.html';
+        } 
+    }
+    browserRedirect();
+</script>
+<header class="site-header">
+    <nav class="row">
+        <div class="logo">
+            <img src="./images/logo.png">
+        </div>
+        <nav class="top-nav">
+            <ul class="site-links">
+                <li><a class="active">Home</a></li>
+                <li><a href="http://book.paddlepaddle.org/index.html" target="_blank">Quick Start</a></li>
+                <li><a href="http://www.paddlepaddle.org/doc/howto/index_en.html" target="_blank">Documentation</a></li>
+                <li class="version-switcher">
+                    <a>Version<i class="fa" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a href="http://www.paddlepaddle.org/release/0.10.0/doc/" target="_blank">0.10.0</a></li>
+                        <li><a href="http://www.paddlepaddle.org/release_doc/0.9.0/doc/" target="_blank">0.9.0</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="right-nav">
+            <div class="language-switcher">
+                <a href="./index.cn.html">中文</a>
+            </div>
+            <div class="github-fork">
+                <a href="https://github.com/PaddlePaddle/Paddle" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+        </nav>
+    </nav>
+</header>
+<section class="head-banner">
+    <div class="row banner">
+        <h1>PArallel Distributed Deep LEarning</h1>
+        <p>An Easy-to-use, Efficient, Flexible and Scalable Deep Learning Platform</p>
+        <div>
+            <a class="quick-start" href="http://book.paddlepaddle.org/index.html" target="_blank">Quick Start</a>
+        </div>
+
+    </div>
+</section>
+<section class="services">
+    <div class="row">
+        <h2><span>Diverse Application Scenarios</span></h2>
+        <p class="sub-title">Powers hundreds of baidu and partner products</p>
+    </div>
+    <div class="row">
+        <div>
+            <img class="service-icon" src="./images/service-1.png">
+        </div>
+        <div>
+            <div class="service-desc">
+                <h3>Computer Vision</h3>
+                <p>Using a Convolutional Neural Network (CNN) for Image Recognition and Object Detection.</p>
+                <div>
+                    <a role="button" class="view-more" href="http://book.paddlepaddle.org/03.image_classification/index.html" target="_blank">Read more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="service-desc">
+                <h3>Natural Language Understanding</h3>
+                <p>Using a Recurrent Neural Network (RNN) for Sentiment Analysis.</p>
+                <div>
+                    <a role="button" class="view-more" href="http://book.paddlepaddle.org/06.understand_sentiment/index.html" target="_blank">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="service-icon" src="./images/service-2.png">
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <img class="service-icon" src="./images/service-3.png">
+        </div>
+        <div>
+            <div class="service-desc">
+                <h3>Recommender System</h3>
+                <p>Using Deep Learning on Recommendation Systems to Help Users Find Interests.</p>
+                <div>
+                    <a role="button" class="view-more" href="http://book.paddlepaddle.org/05.recommender_system/index.html" target="_blank">Read more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features">
+    <div class="row">
+        <h2><span>Technical Features</span></h2>
+    </div>
+    <div class="row">
+        <div class="feature-desc">
+            <div class="feature-icon">
+                <img src="./images/feature-1.png">
+            </div>
+            <h3>Ease of use</h3>
+            <p>Provides an intuitive and flexible interface for loading data and specifying model structure.</p>
+        </div>
+        <div class="feature-desc">
+            <div class="feature-icon">
+                <img src="./images/feature-2.png">
+            </div>
+            <h3>Flexibility</h3>
+            <p>Supports CNN, RNN and various variants and ease to configure complicated deep models.</p>
+        </div>
+        <div class="feature-desc">
+            <div class="feature-icon">
+                <img src="./images/feature-3.png">
+            </div>
+            <h3>Efficiency</h3>
+            <p>Provides extremely optimized operations, memory recycling, network communication.</p>
+        </div>
+        <div class="feature-desc">
+            <div class="feature-icon">
+                <img src="./images/feature-4.png">
+            </div>
+            <h3>Scalability</h3>
+            <p>Ease to scale heterogeneous computing resource and storage to accelerate training process.</p>
+        </div>
+    </div>
+</section>
+<section class="get-started">
+    <div class="row">
+        <h2>PaddlePaddle</h2>
+        <p>An Easy-to-use, Efficient, Flexible and Scalable Deep Learning Platform</p>
+        <div>
+            <a role="button" class="quick-start" href="http://book.paddlepaddle.org/index.html" target="_blank">Quick Start</a>
+        </div>
+    </div>
+</section>
+<footer class="footer-nav">
+    <div class="row">
+        <p class="copyright">&copy;Copyright&nbsp;2017,&nbsp;PaddlePaddle&nbsp;developers.</p>
+    </div>
+</footer>
+<script src="./js/common.bundle.js"></script>
+<script src="./js/home.bundle.js"></script>
+</body>
+</html>
